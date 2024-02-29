@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scal=1.0">
+        <link rel="stylesheet" href="HappyBday.css">
+
+        <title>HAPPY BIRTHDAY</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="giftbox" onclick="showMessageBox()">
+                <img src="giftbox.png" />
+            </div>
+
+            <div id="messagebox">
+                <p>🎉🎂 Happy Birthday, Shamia! 🎂🎉
+                    <br />
+                    <br />
+                    Today, as we celebrate your special day, we're not just honoring a remarkable president in our class, but also an incredible friend whose care and support extend far beyond the duties of leadership. Shamia, your presence brings warmth and positivity to every interaction, enriching our lives in countless ways.
+                    <br />
+                    <br />
+                    Your unwavering support and encouragement have been a guiding light for us all, showing us the true meaning of friendship and camaraderie. Whether it's lending a listening ear, offering a comforting word, or simply sharing a smile, you never fail to uplift those around you.
+                    <br />
+                    <br />
+                    Though distance may have kept us apart from meeting in person, know that our admiration and affection for you know no bounds. Here's to the moments we've shared and the countless memories yet to be made.
+                    <br />
+                    <br />
+                    May your birthday be filled with joy, laughter, and all the love you so richly deserve. Happy Birthday to you, Shamia - a phenomenal leader and an even more phenomenal friend. Wishing you a day as wonderful as you are! 🥳🎈
+                    <br />
+                    <br />
+                    Kindly, Press the button and See what is behind of it.
+                </p>
+                <div class="btncenter">
+                    <button id="clickMe">click me</button>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function showMessageBox(){
+                var messageBox = document.getElementById("messagebox");
+                var giftBox = document.getElementById("giftbox");
+                messagebox.style.display = "block";
+                giftbox.style.display = "none"
+                document.body.style.backgroundColor = "pink"
+            }
+
+            document.getElementById("clickMe").addEventListener("click", function() {
+                window.location.href = "FlowerGift.html";
+            });
+        </script>
+
+    </body>
+</html>
